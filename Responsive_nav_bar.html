@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+          list-style-type: none;
+          display:inline-flex;
+          padding:0 4rem;
+          font-size: 2.5rem;
+          font-weight: 5rem;           
+        }
+        a{
+           text-decoration: none;
+           color:white;
+        }
+        nav{
+            margin:0 3rem;
+            display:flex;          
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 2rem 0;
+        }
+         @media (min-width:1024px){
+            li{
+                display:inline-block;
+               padding:0 1.9rem;
+            }
+        }
+         @media (min-width:1280px){
+            li{
+                padding: 0 3.5rem;
+            }
+        }
+        @media (max-width:390px){
+            li{
+                padding: 2rem 0;
+                display:block;
+            }
+        }
+        @media (max-width:912px){
+            li{
+                padding: 2rem 2.5rem;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;             
+            }
+        }
+        div{
+            background-color:gray;
+            border:none;
+        }
+        #lg{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+        }
+    </style> 
+</head>
+<body>
+    <div>
+        <nav>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Goods</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact us</a></li>
+          </ul>
+          </ul>
+        </nav>
+    </div>    
+</body>
+</html>

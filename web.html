@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Webiste</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .head{
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+        }
+        li{
+            list-style-type: none;
+            display: inline-flex;
+           padding:  1.5rem 3rem;
+           font-size: 3rem;  
+           flex-wrap: wrap;         
+        }
+        a{
+        text-decoration: none;
+        color:rgb(55, 48, 48)
+        }
+        .profession{            
+            background-color: rgb(218, 235, 181);            
+            width:auto;
+            height:50%;
+            padding:3rem;
+            display: flex;     
+            flex-direction: column;           
+        }
+        #services{
+            margin: 1px;
+            border-top: 1px solid rgb(228, 219, 219);
+            height:50%;
+            padding:3rem;
+            display: flex;     
+            flex-direction: column;
+            width:auto;
+            background-color: bisque;
+        }
+        mark{
+            border-radius:5px;        
+        }
+        #about{
+            margin: 1px;
+            border-top: 1px solid rgb(228, 219, 219);
+            height:50%;
+            padding:3rem;
+            display: flex;     
+            flex-direction: column;
+            width:auto;
+            background-color: rgb(248, 213, 213); 
+        }
+        #contact{
+            margin: 1px;
+            border-top: 1px solid rgb(228, 219, 219);
+            height:50%;
+            padding:3rem;
+            display: flex;     
+            width:auto;
+           flex-direction:column;
+            background-color: rgb(206, 202, 244); 
+        }
+        input{
+		outline:none;
+            border: none;    
+            justify-content: center;
+            padding: 1.5rem;
+            width:75%;
+            border-radius: 1.1rem;
+            font-size: 1rem;
+            margin-bottom: 1rem;			
+        }
+		::placeholder{
+		color:red;
+		}
+        h3{
+            display: flex;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-family: fantasy;
+            padding: 1rem;
+        }
+        p{
+            font-size: 2em;
+            letter-spacing: 3px;
+            padding: 1rem 0;
+        }
+        textarea{
+           display: flex;
+            align-items: flex-end;
+            font-size: 1rem;
+            padding:1rem;
+            height: 15rem;
+            width:50%;
+			outline:none;
+			border:none;           
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="heading" class="head">
+            <ul>
+            <li><a href="#heading">Home</a></li>
+            <li><a href="#professional">Profession</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
+        </div>
+    </header>
+    <div  id="professional" class="profession">
+        <h3>What can I do?</h3>
+        <p>I am a <mark>Professional Web Developer</mark> With over 12 Months of Experience.</p>
+        <p>I've created more than  <mark> 10 </mark>  web applications both for Large and Small Businessess.</p>
+        <p>I've worked with more than 3 Programming Languages,these are PHP,PYTHON,JAVASCRIPT, JAVA and other
+            technologies such as HTML,CSS,BOOTSTRAP and JQUERY to deliver  high Quality and Attractive 
+            websites.</p>
+        <p>I've also interacted  with SQL Databases such as Mysql and Postgres.</p>
+    </div>
+    <div id="services">
+        <h3>What Services do  I offer?</h3>
+        <p>I offer <mark>Webiste Development services</mark> at an affordable fee.</p>
+        <p>I deliver such services in time and with ease.</p>
+        <p><mark>In need of hiring a developer </mark>for some tasks,don't hesitate to reach out to me.</p>
+        <p>In case you need a Website  for your Business ,feel free to reach out to me</p>
+    </div>
+    <div id="about">
+        <h3>About me</h3>
+        <p>I am passionate  about Web Development and the Tech industry as whole.</p>
+        <p>I am also available for <mark> Remote hiring</mark> ,would love to connect with other
+            great developers in developing quality webistes. </p>
+        <p>I am located in <mark>Nyahururu</mark> Town ,Laikipia County.</p>    </div>
+    <div id="contact">
+        <h3>Reach Out to me </h3>
+        <p>Email Me Asap.</p>
+        <form>
+            <input type="text" id="name"  placeholder="Your Name..." required>
+            <input type="email" id="email"  placeholder="Your email..." required>
+            <textarea>Your Message...
+            </textarea>
+        </form>    
+     </div>    
+</body>
+</html>

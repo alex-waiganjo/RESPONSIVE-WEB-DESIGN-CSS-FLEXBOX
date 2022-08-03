@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+display:inline-flex;
+/*Arranges the divs in  row 
+Same as flex-direction: row*/
+
+flex-direction: row;
+/*Same as Inline-flex */
+
+
+/* flex-wrap:wrap-reverse; */
+/* Arranges the fourth div content on top of the others */
+
+/* flex-wrap:wrap */
+/* Arranges the content in a more desirable manner (Divs are responsive) */
+
+/* flex-wrap:no-wrap */
+/* Does not wrap the div content */
+
+/* flex-direction: row; */
+/* Arranges the divs in a  row (horizontal manner)  */
+
+/* flex-direction: row-reverse; */
+/* Arranges the divs in a  row (horizontal manner)  and  reverse manner*/
+
+/* flex-direction: column; */
+/* Arranges the divs in a column(vertical manner) */
+
+/* flex-direction: column-reverse; */
+/* Arranges the divs in a column(vertical manner) and reverse manner */
+
+/*gap:10px;*/
+/* Same as the margin attribute*/
+
+/*column-gap:10px; */
+/*Simple shorthand of   gap in a column*/
+
+/*row-gap:10px;*/
+/*Simple shorthand of   gap in a row*/
+
+/* align-items: stretch; */
+/* arranges the divs just like the inline-flex */
+
+/* align-items: center; */
+/* Centers the divs with respect to the original height of the divs */
+
+/* align-items: flex-start; */
+/* Arranges  the divs from the left side  */
+
+/* align-items: flex-end; */
+/* Arranges  the divs from the right side  */
+
+/* display:inline-flex; */
+/* inline-flex arranges all the divs in a horizontal manner */
+
+/* display:inline-flex-box; */
+/* inline-flexbox arranges all the divs in a vertical manner */
+
+/* flex values starts from 1.....10....  */
+
+
+}
+.container div{    
+   border-radius: 5px;
+    border:1px  #ccc solid;
+    padding: 1rem;
+    margin:.5rem;
+    background-color: aqua;      
+}
+.box-1{
+flex:4;
+}
+.box-2{
+flex:3;
+flex-wrap: wrap;
+}
+.box-3{
+flex:5;
+}
+.box-4{
+flex:2;    
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="box-1">
+        <h1>Box One</h1>
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta quidem, officia eveniet placeat esse aspernatur commodi nobis voluptate in vero doloribus debitis
+            inventore vel,
+             autem tenetur obcaecati voluptatibus maxime perferendis!
+       </p>
+     </div>
+    <div class="box-2">
+        <h1>Box Two</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta quidem, officia eveniet placeat esse aspernatur commodi nobis voluptate in vero doloribus debitis
+            inventore vel,
+             autem tenetur obcaecati voluptatibus maxime perferendis!
+        </p>       
+    </div> 
+    <div class="box-3">
+        <h1>Box Three</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta quidem, officia eveniet placeat esse aspernatur commodi nobis voluptate in vero doloribus debitis
+            inventore vel,
+             autem tenetur obcaecati voluptatibus maxime perferendis!
+        </p>    
+    </div>
+    <div class="box-4">
+        <h1>Box Four</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta quidem, officia eveniet placeat esse aspernatur commodi nobis voluptate in vero doloribus debitis
+            inventore vel,
+             autem tenetur obcaecati voluptatibus maxime perferendis!
+        </p>    
+    </div>
+</div>
+</body>
+</html>
